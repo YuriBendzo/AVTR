@@ -24,7 +24,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        min-height: calc(100vh - 116px);
+        min-height: calc(100vh - 100px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -108,10 +108,14 @@
         margin-bottom: 25px;
     }
     &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-family: 'Copporate-A-Bold';
         color: #F402A2;
         border: 1px solid #F402A2;
-        padding: 14px 260px;
+        padding: 14px;
+        max-width: 100%;
         margin-top: 25px;
         transition: all .3s ease;
     }
@@ -166,6 +170,9 @@
     &__cell-one {
         grid-row: 1/3;
     }
+    &__interier-img {
+        grid-column: 2/-1;
+    }
     &__cell-two {
         grid-row-end: -1;
         display: flex;
@@ -185,12 +192,10 @@
         margin-bottom: 25px;
     }
     &__slider {
-        padding-bottom: 25px;
+        padding-bottom: 50px;
     }
     &__slider-item {
-        margin: 0 30px;
-        width: 450px !important;
-        height: 280px;
+        padding: 0 30px;
     }
     &__box {
         max-width: 590px;
@@ -242,3 +247,5 @@
         height: 300px;
     }
 }
+
+@import 'media';
